@@ -1,0 +1,29 @@
+/* 后代选择器 */
+div p {
+    color: blue;
+}
+
+
+
+/* 直接子元素选择器 */
+#div01>p {
+    color: aqua;
+    font-size: 30px;
+}
+
+
+
+/* 相邻兄弟选择器 */
+/* 向下相邻 */
+div+p {
+    background: black;
+}
+
+
+
+/* 所有兄弟选择器 */
+/* 向下相邻 */
+div~p {
+    font-style: italic;
+
+}

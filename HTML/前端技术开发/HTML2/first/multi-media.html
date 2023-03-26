@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>多媒体</title>
+		
+		
+	</head>
+	<body>
+		<!--多媒体 
+			1、图片 <img src="图片路径" alt="给搜索引擎" title="标题文本" width="图片宽度" border="图片边框">
+			
+			2、滚动文字 <marquee behavior="滚动模式" direction="滚动方向">文字内容</marquee>
+				属性behavior：alternate 来回滚动 | scroll：循环滚动 | slide：滚动一次
+				属性direction：left | right | up | down
+				属性loop: 循环次数 | -1 无限 | 数值
+				
+			3、音频 <audio src="音频路径" ></audio>
+			
+		 -->
+		<img src="./img/wallhaven-85oy2j.png" alt="wallhaven" title="图片" width="80%" border="5px">
+		<img src="./img/wallhaven-o53v3m.jpg" alt="wallhaven" title="图片" width="80%" border="5px">
+		
+		<marquee behavior="alternate" direction="right">//////////////////       文字      ///////////////////</marquee>
+		
+		<audio src="./res/Barbitone%20-%20破茧-成蝶(高考加油）.mp3" controls="controls" autoplay="autoplay" loop="loop"></audio>
+		<br>
+		
+		<video width="800" height="" controls="controls" preload="metadata">
+			<source src="./res/哔哩哔哩%20(゜-゜)つロ%20干杯~-bilibili.mp4" type="video/mp4" ></source>
+			<source src="myvideo.ogv" type="video/ogg"></source>
+			<source src="myvideo.webm" type="video/webm"></source>
+			<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+				<param name="movie" value="myvideo.swf" />
+				<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+			</object>
+			当前浏览器不支持 video直接播放，点击这里下载视频: <a href="myvideo.webm">下载视频</a>
+		</video>
+		
+	</body>
+</html>

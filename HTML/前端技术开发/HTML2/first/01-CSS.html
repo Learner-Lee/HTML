@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 内部样式表 -->
+    <!-- <style>
+			p {
+				width: 200px;
+				background-color: black;
+				color: aqua;
+			}
+		</style> -->
+
+    <!-- 外部样式表 -->
+    <link rel="stylesheet" href="./css/01-CSS.css" />
+</head>
+
+<body>
+    <!-- 引入css的三种方法 -->
+
+    <!-- 行间样式 -->
+    <h1 style="width: 50px; background-color: aquamarine">CSS样式</h1>
+    <p>内部样式表</p>
+
+    <!-- id选择器 优先级 高于 标签选择器 -->
+    <!-- id选择器 优先级 高于 class选择器 -->
+    <!-- class选择器 优先级 高于 标签选择器 -->
+    <p id="p1" class="brown-size">内部样式表2</p>
+
+    <em class="em location-bg">class 属性</em>
+
+    <strong>Css选择器</strong>
+
+    <p>
+        <em>后代选择器</em>
+        <em>父亲</em>
+    <p>
+        <em>儿子 <em>孙子</em> </em>
+    </p>
+    </p>
+    <!-- id name class value -->
+    <!-- 
+        id      唯一性      
+        class   多对多
+        name    单|复选框绑定
+        value   数据
+     -->
+</body>
+
+</html>

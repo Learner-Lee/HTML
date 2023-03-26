@@ -1,0 +1,72 @@
+/* css 选择器 */
+
+/* 1，标签选择器 */
+p {
+    width: 200px;
+    background-color: black;
+    color: aqua;
+}
+
+h1 {
+    background-color: black;
+}
+
+
+/* 2.id选择器 */
+#p1 {
+    color: blueviolet;
+}
+
+
+/* 3.class选择器 */
+.em {
+    color: cornflowerblue;
+    font-size: 60px;
+}
+
+.location-bg {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.brown-size {
+    color: brown;
+}
+
+
+/* 4.后代选择器 */
+p em {
+    color: rgb(145, 145, 145);
+}
+
+
+/* 子选择器|直接子元素选择器 */
+p>em {
+    color: yellowgreen;
+}
+
+p>em>em {
+    color: rgb(71, 71, 138);
+}
+
+
+/* 兄弟选择器 +   相邻选择器 ~ */
+
+
+/* 5.群组选择器 */
+h1,
+strong,
+em,
+p {
+    text-align: center;
+}
+
+
+/* 6.并列选择 */
+p.brown-size {
+    font-size: 40px;
+}
+
+p#p1 {
+    font-size: 90px;
+}

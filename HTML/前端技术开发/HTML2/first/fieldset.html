@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单</title>
+
+		<style type="text/css">
+			body {
+				font-size: 15px;
+			}
+
+			textarea {
+				width: 250px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 创建域及设置域标题 -->
+		<!-- 
+		 格式：	<fieldset id="">
+					<legend align="center"> 域标题文字 </legend>
+				</fieldset>
+		 -->
+
+		<!-- 表单元素 -->
+		<!-- 
+		  1. 单行文本框 input
+			格式：<input type="text" id="" value="" name="userid" placeholder="请输入账号~"/>
+			属性：type='text' 表示文本框；	name 	表示名字
+				 placeholder 设置提示性文字；	value 	设置默认值
+				 required  	 设置必填项；	pattern 设置正则（验证文本框内容）
+				 maxlength 	 设置允许输入的最大长度
+				 disable   	 禁用（不可取值）autocomplete="off"关闭自动提示
+		  2. 密码框 input
+		  	格式：<input type="password" name="userpwd" placeholder="8-16位密码" pattern="{8-16}"/>
+		  	属性：type='password' 表示文本框；	name 	表示名字
+		  		placeholder 设置提示性文字；	
+		  		required  	 设置必填项；	pattern 设置正则（验证文本框内容）
+		  3. 密码框 input
+		  	格式：<input type="radio" name="sex" value="male"/>男
+		  	属性：type="radio" 表示单选按钮；	name 表示名字（必须相同）			
+			value 表示选中的值（必须事先设置）；checked 表示默认选中
+			
+		  -->
+
+		<fieldset id="">
+			<legend align="center"> 表单元素 </legend>
+			<form action="" method="get">
+				账号：<input type="text" id="" value="" name="userid" placeholder="请输入账号~" required="required"
+					maxlength="8" />
+
+				<br>
+				密码：<input type="password" name="userpwd" placeholder="8-16位密码" />
+
+				<br>
+				性别：<input type="radio" name="sex" id="sex1" value="male" checked="checked" /><label for="sex1">男</label>
+				<input type="radio" name="sex" id="sex2" value="female" /><label for="sex2">女</label>
+				<input type="radio" name="sex" id="sex3" value="secret" /><label for="sex3">保密</label>
+
+				<br>
+				爱好：<input type="checkbox" name="hobby1" />跑步
+				<input type="checkbox" name="hobby1" />看书
+				<input type="checkbox" name="hobby1" />画画
+				<br>
+				<!-- 多行文本框 -->
+				<p>个人简介</p>
+				<textarea name="个人简介" placeholder="输入文字。。。"></textarea>
+				<br>
+				<!-- 文件输入 -->
+				<input type="file" name="文件" />
+
+				<br>
+				<br>
+				<!-- 
+				 按钮
+				 普通按钮
+				 提交按钮
+				 重置按钮
+				 -->
+				<input type="button" value="普通按钮" />
+				<input type="reset" />
+				<input type="submit" value="提交" />
+				
+				
+				<!-- 下拉列表框 -->
+				<p>最喜欢的食物</p>
+				<select>
+					<optgroup label="水果">
+						<option value ="nothing"></option>
+						<option value ="mango1">芒果01</option>
+						<option value ="mango2">芒果02</option>
+						<option value ="mango3">芒果03</option>
+					</optgroup>
+					<optgroup label="水果">
+						<option value ="nothing"></option>
+						<option value ="mango1">芒果01</option>
+						<option value ="mango2">芒果02</option>
+						<option value ="mango3">芒果03</option>
+					</optgroup>
+				</select>
+				
+				<p>最喜欢的食物</p>
+				<select multiple="multiple">
+					<optgroup label="水果">
+						<option value ="nothing"></option>
+						<option value ="mango1">芒果01</option>
+						<option value ="mango2">芒果02</option>
+						<option value ="mango3">芒果03</option>
+					</optgroup>
+					<optgroup label="水果">
+						<option value ="nothing"></option>
+						<option value ="mango1">芒果01</option>
+						<option value ="mango2">芒果02</option>
+						<option value ="mango3">芒果03</option>
+					</optgroup>
+				</select>
+				
+			</form>
+
+		</fieldset>
+
+	</body>
+</html>
