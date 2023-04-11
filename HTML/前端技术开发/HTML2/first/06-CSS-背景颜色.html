@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/* 
+            1.background-color:背景颜色
+
+                ·预设值，表示颜色的单词；transparent 透明，浏览器默认值
+                ·十六进制数，# 开头，两两相同可缩写
+                ·rgb(r, g, b) ，可添加一个参数设置透明度 
+
+
+            2.background-image:背景图片
+
+                ·url()，括号内为图片的存储地址
+                ·liner-gradient() 设置线性渐变色，可设置渐变方向、颜色、渐变位置
+
+
+            3.background-size:背景图片尺寸
+
+                ·数值（px)、数值（%）— 相对于父元素
+                ·cover：保持纵横比扩展，多余部分背裁剪，满足容器较宽的方向
+                ·contain：保持纵横比扩展，多余部分背裁剪，满足容器较窄的方向
+
+
+
+            4.background-repeat:背景图片重复
+
+                ·repeat（默认值）、no-repeat
+                ·repeat-x、repeat-y：仅在水平、垂直方向重复平铺
+
+
+            5.background-position:背景图片位置
+
+                ·参数1：left、center、right。水平位置，参考点为父元素左边沿
+                ·参数2：top、center、bottom。水平位置，参考点为父元素上边沿
+                ·也可使用 数值（px)、数值（%）
+
+
+
+            6.background-attachment:背景附件
+
+                ·scroll：浏览器的默认值，背景图片随着滚动条的移动而移动
+                ·fixed：背景图片固定在页面上，不随滚动条的移动而移动
+            */
+			#iddiv {
+				width: 300px;
+				height: 300px;
+				background-image: linear-gradient(
+					red,
+					orange,
+					yellow,
+					green,
+					blue,
+					indigo,
+					violet
+				);
+				border: 1px solid;
+			}
+			#iddiv2 {
+				background-color: aqua;
+				background-image: url(./img/wallhaven-1pkw6v.jpg);
+				background-size: contain;
+				background-repeat: repeat;
+				background-position: 10px 10px;
+				background-attachment: fixed;
+				width: 3000px;
+				height: 3000px;
+				border: 1px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="iddiv"></div>
+		<div id="iddiv2"></div>
+	</body>
+</html>

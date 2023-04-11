@@ -1,0 +1,13 @@
+span{
+    font-size: 150%;
+    /* 透明度 为 1 表示完全不透明   值为0表示完全透明 */
+    color: rgba(255, 0, 0, 0.5);
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+    line-height: 100px;
+    text-shadow: 1px 1px 2px green;
+}

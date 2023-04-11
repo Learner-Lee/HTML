@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>204-文本属性-文本水平对齐和单行文本垂直居中</title>
+		<style>
+			.box1 {
+				/* 取值为：left,center,right */
+				text-align: center;
+				width: 500px;
+				background-color: yellow;
+			}
+			.box2 {
+				/* 两端对齐，多行文本 */
+				text-align: justify;
+				width: 500px;
+				background-color: green;
+			}
+            .box3{
+                width: 500px;
+                height: 200px;
+				background-color: yellow;
+                /* line-height 文本垂直居中 */
+                line-height: 200px;
+                text-align: center;
+            }
+            .box4{
+                width: 500px;
+                height: 200px;
+				background-color:red;
+                /* line-height 文本垂直居中 */
+                line-height: 20px;
+                text-align: center;
+            }
+		</style>
+	</head>
+	<body>
+		<h1>text-align的用法</h1>
+		<div class="box1">大家好</div>
+		<div class="box2">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+			assumenda dignissimos alias dolores, excepturi veniam sed quod quaerat
+			commodi exercitationem ratione, illo cum autem! Dicta aut in quae ipsum
+			perspiciatis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+			assumenda dignissimos alias dolores, excepturi veniam sed quod quaerat
+			commodi exercitationem ratione, illo cum autem! Dicta aut in quae ipsum
+			perspiciatis?
+		</div>
+        <h1>line-height的使用</h1>
+        <div class="box3">
+            大家好
+        </div>
+        <div class="box4">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+			assumenda dignissimos alias dolores, excepturi veniam sed quod quaerat
+			commodi exercitationem ratione, illo cum autem! Dicta aut in quae ipsum
+			perspiciatis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+			assumenda dignissimos alias dolores, excepturi veniam sed quod quaerat
+			commodi exercitationem ratione, illo cum autem! Dicta aut in quae ipsum
+			perspiciatis?
+		</div>
+	</body>
+</html>

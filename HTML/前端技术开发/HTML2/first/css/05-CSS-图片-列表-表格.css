@@ -1,0 +1,19 @@
+img.img1{
+    width: 50px;
+    /* float: right; */
+}
+#a{
+    vertical-align: baseline;
+}
+
+
+
+
+span{
+    /* 中划线 */
+    text-decoration: line-through overline underline;  
+    /* 上划线 */
+    /* text-decoration: overline; */
+    /* 下划线 */
+    /* text-decoration: underline; */
+}

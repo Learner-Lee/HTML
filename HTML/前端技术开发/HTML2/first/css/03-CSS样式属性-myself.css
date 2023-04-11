@@ -1,0 +1,210 @@
+#span5 {
+	color: rgb(251, 251, 24);
+	background: #000000;
+}
+
+#p1 {
+	font-weight: 100;
+}
+
+#p2 {
+	font-weight: 300;
+}
+
+#p3 {
+	/* 数字值 400 相当于 关键字 normal */
+	font-weight: 400;
+}
+
+#p4 {
+	/* 700 等价于 bold */
+	font-weight: 700;
+}
+
+#p5 {
+	font-weight: 900;
+}
+
+#span1 {
+	/* normal
+    选择 font-family 的常规字体。 */
+	font-size: 30px;
+	font-style: normal;
+}
+
+#span2 {
+	/* italic
+    选择斜体，如果当前字体没有可用的斜体版本，
+    会选用倾斜体（oblique ）替代。 */
+	font-size: 30px;
+	font-style: italic;
+}
+
+#span3 {
+	/* oblique
+    选择倾斜体，如果当前字体没有可用的倾斜体版本，
+    会选用斜体（ ）替代。如果所选字体系列中有一个或多个斜面可用，
+    则选择与指定角度最匹配的斜面。如果没有可用的斜面，
+    浏览器将通过将普通面倾斜指定量来合成字体的斜面版本。
+    有效值是 到 （包括）的度值。如果未指定角度，则使用 14 度的角度。
+    正值倾斜到行尾，而负值向开头倾斜。italic-90deg90deg */
+	font-size: 30px;
+	font-style: oblique;
+}
+
+#span4 {
+	/* CSS 数据类型 <angle> 用于表示角的大小，
+    单位为度（degrees）、百分度（gradians）、
+    弧度（radians）或圈数（turns）。 */
+	font-size: 30px;
+	font-style: oblique 23deg;
+}
+
+#p2-1 {
+	font-family: "Courier New", Courier, monospace;
+}
+
+#p2-2 {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+div {
+	font-size: 10px;
+	width: 300px;
+	border: 2px solid black;
+}
+
+#div1 {
+	/* Syntax */
+	/* <length> 长度值 */
+	/* text-indent: 3mm;
+    text-indent: 40px; */
+
+	/* <percentage>百分比值取决于其包含块（containing block）的宽度*/
+	/* text-indent: 15%; */
+
+	/* Values
+    <length>
+    使用固定的<length>值来指定文本的缩进。允许使用负值。查阅可能的 <length> 单位。
+
+    <percentage>
+    使用包含块宽度的百分比作为缩进。 */
+
+	text-indent: 2em;
+}
+
+#div2 {
+	/* 文本可以是左对齐或右对齐、居中对齐或两端对齐。 */
+	text-align: right;
+}
+
+#div3 {
+	/* 当属性设置为“对齐”时，每行都是 拉伸，使每条线的宽度相等，
+    左右边距为 直的（如杂志和报纸）：text-align */
+	text-align: justify;
+}
+
+/* 文本最后对齐
+该属性指定如何对齐文本的最后一行。text-align-last */
+p.a {
+	text-align-last: right;
+}
+
+p.b {
+	text-align-last: center;
+}
+
+p.c {
+	text-align-last: justify;
+}
+
+/* 改变文本方向
+该属性可用于更改元素的文本方向：direction unicode-bidi */
+p.ex1 {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+}
+
+/* 
+垂直对齐
+该属性设置元素的垂直对齐方式。vertical-align */
+img.a {
+	vertical-align: baseline;
+}
+
+img.b {
+	vertical-align: text-top;
+}
+
+img.c {
+	vertical-align: text-bottom;
+}
+
+img.d {
+	vertical-align: sub;
+}
+
+img.e {
+	vertical-align: super;
+}
+
+/*  */
+
+div.LH {
+	line-height: 100px;
+}
+
+/*  */
+
+p.t01 {
+	text-decoration: none;
+}
+
+p.t02 {
+	text-decoration: underline;
+}
+
+p.t03 {
+	text-decoration: line-through;
+}
+
+/*  */
+
+div.TT1 {
+	text-transform: none;
+}
+
+div.TT2 {
+	text-transform: capitalize;
+}
+
+div.TT3 {
+	text-transform: uppercase;
+}
+
+div.TT4 {
+	text-transform: lowercase;
+}
+
+/*  */
+
+div.TS1 {
+	text-shadow: none;
+}
+
+div.TS2 {
+	text-shadow: 20px 2px #ff0000;
+}
+
+/*  */
+
+div.LS {
+	letter-spacing: 20px;
+}
+
+/*  */
+
+div.WS {
+	word-spacing: 100px;
+}

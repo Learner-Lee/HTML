@@ -1,6 +1,6 @@
-<!DOCTYPE html><!-- 标签文档的声明 -->
+<!DOCTYPE html>
+<!-- 标签文档的声明 -->
 <html>
-	
 	<!-- 设置页面有标签信息 -->
 	<head>
 		<!-- 设置页面元信息标签，常见属性如下
@@ -9,25 +9,25 @@
 		3. content 设置name的数值
 		4. http-equiv 设置页面刷新（refesh）
 		-->
-		<meta charset="utf-8"/>
-		
+		<meta charset="utf-8" />
+
 		<!-- 定义搜索引擎的关键字： -->
-		<meta name="keywords" content="HTML, CSS, JavaScript">
-		
+		<meta name="keywords" content="HTML, CSS, JavaScript" />
+
 		<!-- 定义网页的描述： -->
-		<meta name="description" content="Free Web tutorials for HTML and CSS">
-		
+		<meta name="description" content="Free Web tutorials for HTML and CSS" />
+
 		<!-- 定义页面的作者： -->
-		<meta name="author" content="alen">
-		
+		<meta name="author" content="alen" />
+
 		<!-- 每 5 秒刷新一次文档： -->
-		<meta http-equiv="refresh" content="5">
+		<meta http-equiv="refresh" content="5" />
 		<!-- 打开网页3秒后去Google -->
 		<!-- <meta http-equiv="refresh" content="3; https://www.google.com/?gws_rd=ssl"/> -->
-		
+
 		<!-- 设置视口以使您的网站在所有设备上看起来都不错： -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<!--
 		设置视口
 		视区是用户在网页上的可见区域。它因设备而异 - 它在手机上会比在电脑屏幕上小。
@@ -41,13 +41,9 @@
 		
 		该部件设置浏览器首次加载页面时的初始缩放级别。initial-scale=1.0
 		-->
-		
-		
-		
+
 		<title>classOne</title>
-		
-		
-		
+
 		<!-- 编写页面交互代码 -->
 		<!-- 定义和用法
 		该标记用于嵌入客户端脚本 （JavaScript）。<script>
@@ -57,93 +53,102 @@
 		<script src="js/index.js">
 			
 		</script> -->
-		
-		
+
 		<!-- 编写页面样式代码 -->
 		<!-- <link rel="stylesheet" href="css/index.css" /> -->
-		
-		
+
 		<!-- 编写页面头部图标 -->
-		<link rel="icon" href="./img/home_logo.png"/>
-		
+		<link rel="icon" href="./img/home_logo.png" />
+
 		<style type="text/css">
-			i,b,p{
+			i,
+			b,
+			p {
 				width: 200px;
 				height: 200px;
 				background-color: antiquewhite;
 			}
-			body{
+			body {
 				font-size: 30px;
 			}
 		</style>
-		
 	</head>
 	<body>
-		<i>这是行级</i> | <em>斜体</em> | <cite>斜体</cite> <!-- 斜体 -->
-		
-		<br><!-- 换行 -->
-		
-		<b>这是加粗</b> | <strong>加粗</strong><!-- 加粗 -->
-		
-		<p>这是段落</p> <!-- 段落开头 -->
-		
+		<i>这是行级</i> | <em>斜体</em> | <cite>斜体</cite>
+		<!-- 斜体 -->
+
+		<br /><!-- 换行 -->
+
+		<b>这是加粗</b> | <strong>加粗</strong
+		><!-- 加粗 -->
+
+		<p>这是段落</p>
+		<!-- 段落开头 -->
+
 		<b>i like 02</b>
-		
-		<br><!-- 换行 -->
-		
-		3X<sup>2</sup><!-- 上标 --> | a<sub>1</sub><!-- 下标 -->
-		
-		<br><!-- 换行 -->
-		
+
+		<br /><!-- 换行 -->
+
+		3X<sup>2</sup
+		><!-- 上标 -->
+		| a<sub>1</sub
+		><!-- 下标 -->
+
+		<br /><!-- 换行 -->
+
 		<s>删除线</s>|<del>删除线</del> | <u>下标线</u>
-		
-		<br><!-- 换行 -->
-		
+
+		<br /><!-- 换行 -->
+
 		正常<big>加大</big><small>缩小</small>
-		
-		<hr size="5" align="center" color="aqua"><!-- 一条直线 -->
+
+		<hr size="5" align="center" color="aqua" />
+		<!-- 一条直线 -->
 		<h1>标题</h1>
 		<h2>标题</h2>
 		<h3>标题</h3>
 		<h4>标题</h4>
 		<h5>标题</h5>
 		<h6>标题</h6>
-		<hr size="5px" align="center" color="black" width="80%"><!-- 一条直线 -->
-		
-		<img src="img/home_logo.png" align="center" width="100%">
-		
+		<hr size="5px" align="center" color="black" width="80%" />
+		<!-- 一条直线 -->
+
+		<img src="img/home_logo.png" align="center" width="100%" />
+
 		<center>居中</center>
-		<font size="60px" color="skyblue"> 文字 </font> | <font size="60px" color="pink"> 文字2 </font>
+		<font size="60px" color="skyblue"> 文字 </font> |
+		<font size="60px" color="pink"> 文字2 </font>
 		<pre><!-- 固定格式 -->
 			
 			格式
 			标签
 		</pre>
-		<hr >
-		<font size="1" color=""><pre>
-Hadoop是一个由Apache基金会所开发的分布式系统基础架构。
-用户可以在不了解分布式底层细节的情况下，开发分布式程序。
-充分利用集群的威力进行高速运算和存储。Hadoop实现了一个分布式文件系统（ Distributed File System）
-，其中一个组件是HDFS（Hadoop Distributed File System）。HDFS有高容错性的特点
-，并且设计用来部署在低廉的（low-cost）硬件上；而且它提供高吞吐量（high throughput）来访问应用程序的数据
-，适合那些有着超大数据集（large data set）的应用程序。HDFS放宽了（relax）POSIX的要求
-，可以以流的形式访问（streaming access）文件系统中的数据。Hadoop的框架最核心的设计就是：HDFS和MapReduce。
-HDFS为海量的数据提供了存储，而MapReduce则为海量的数据提供了计算
-			
-总结，Hadoop是一个优秀的大数据处理框架。几乎是所有大数据专业的工作者都绕不开的一个话题。
-Hadoop以他优秀的性能在全球大数据发展中处于独一无二的地位是整个大数据的基石。
-所以，我认为如果你想学习好大数据就应该要学习处理框架Hadoop，这几乎是大数据人的必经之路。
-		</pre></font>
-		
-		写信给<address> 123456@qq.com</address>
-		
+		<hr />
+		<font size="1" color="">
+			<pre>
+		Hadoop是一个由Apache基金会所开发的分布式系统基础架构。
+		用户可以在不了解分布式底层细节的情况下，开发分布式程序。
+		充分利用集群的威力进行高速运算和存储。Hadoop实现了一个分布式文件系统（ Distributed File System）
+		，其中一个组件是HDFS（Hadoop Distributed File System）。HDFS有高容错性的特点
+		，并且设计用来部署在低廉的（low-cost）硬件上；而且它提供高吞吐量（high throughput）来访问应用程序的数据
+		，适合那些有着超大数据集（large data set）的应用程序。HDFS放宽了（relax）POSIX的要求
+		，可以以流的形式访问（streaming access）文件系统中的数据。Hadoop的框架最核心的设计就是：HDFS和MapReduce。
+		HDFS为海量的数据提供了存储，而MapReduce则为海量的数据提供了计算
+					
+		总结，Hadoop是一个优秀的大数据处理框架。几乎是所有大数据专业的工作者都绕不开的一个话题。
+		Hadoop以他优秀的性能在全球大数据发展中处于独一无二的地位是整个大数据的基石。
+		所以，我认为如果你想学习好大数据就应该要学习处理框架Hadoop，这几乎是大数据人的必经之路。
+		</pre
+			>
+		</font>
+
+		写信给
+		<address>123456@qq.com</address>
+
 		<span>123</span>|<span>456</span>
-		<br>
-		<div id="">
-		123	
-		</div>|
-		<div id="">
-		456	
-		</div>
+		<br />
+		<div id="">123</div>
+		|
+		<div id="">456</div>
 	</body>
 </html>

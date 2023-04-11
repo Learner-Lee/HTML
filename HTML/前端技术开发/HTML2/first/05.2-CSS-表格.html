@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			#idtable {
+				background-color: aqua;
+				/* border-collapse: collapse; */
+				border-spacing: 10px, 19px;
+				caption-side: bottom;
+				border-color: purple;
+				height: 70px;
+				width: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<table
+			border="1"
+			height="70"
+			width="300"
+			bgcolor="#FAEBD7"
+			cellspacing="2"
+			cellpadding="2"
+			bordercolor="purple"
+			align="center"
+		>
+			<!-- 表格，可设置属性：border、height、width、bgcolor、cellspacing、cellpadding等 -->
+			<caption>
+				表格
+			</caption>
+			<tr>
+				<th>01</th>
+				<th>02</th>
+				<th>03</th>
+				<th>04</th>
+				<th rowspan="2">05</th>
+			</tr>
+			<tr>
+				<td>明日香</td>
+				<td>凌波丽</td>
+				<td>休比</td>
+				<td>娜娜奇</td>
+			</tr>
+			<tr>
+				<td>雷姆</td>
+				<td>伊雷娜</td>
+				<td>惠惠</td>
+				<td colspan="2">三笠</td>
+			</tr>
+		</table>
+
+		<table id="idtable" border="1">
+			<caption>
+				表格
+			</caption>
+			<tr>
+				<th>01</th>
+				<th>02</th>
+				<th>03</th>
+				<th>04</th>
+			</tr>
+			<tr>
+				<td>明日香</td>
+				<td>凌波丽</td>
+				<td>休比</td>
+				<td>娜娜奇</td>
+			</tr>
+			<tr>
+				<td>雷姆</td>
+				<td>伊雷娜</td>
+				<td>惠惠</td>
+				<td>三笠</td>
+			</tr>
+		</table>
+	</body>
+</html>

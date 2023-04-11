@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			/* list-style-type: 确定前面样式 */
+			ul {
+				list-style-type: square;
+			}
+			ol {
+				list-style-type: upper-roman;
+			}
+
+            /* list-style-image: 更改图表样式 */
+			#ul1 {
+				list-style-image: url("./img/star2.png");
+			}
+
+            /* list-style-position: 是否需要缩进 */
+			#ul2 {
+				list-style-position: inside;
+			}
+
+			#ul3 {
+				list-style-position: outside;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>水果</li>
+
+			<ol>
+				<li>01</li>
+				<li>02</li>
+				<li>03</li>
+			</ol>
+			<li>蔬菜</li>
+
+			<ol>
+				<li>01</li>
+				<li>02</li>
+				<li>03</li>
+			</ol>
+			<li>零食</li>
+
+			<ol>
+				<li>01</li>
+				<li>02</li>
+				<li>03</li>
+			</ol>
+		</ul>
+
+		<ul id="ul1">
+			<li>123</li>
+			<ol class="ol1">
+				<li>01</li>
+				<li>02</li>
+				<li>03</li>
+			</ol>
+
+			<li>456</li>
+			<ol class="ol1">
+				<li>01</li>
+				<li>02</li>
+				<li>03</li>
+			</ol>
+			<li>789</li>
+			<ol class="ol1">
+				<li>01</li>
+				<li>02</li>
+				<li>03</li>
+			</ol>
+		</ul>
+		<br />
+
+		<ul id="ul2">
+			<li>Apollo 11: First Human Landing</li>
+			<li>City in Space: The <br> International Space Station</li>
+			<li>Great Observatory: <br> The Hubble Space Telescope</li>
+		</ul>
+
+		<ul id="ul3">
+			<li>Apollo 11: First Human Landing</li>
+			<li>City in Space: The <br> International Space Station</li>
+			<li>Great Observatory: <br> The Hubble Space Telescope</li>
+		</ul>
+	</body>
+</html>

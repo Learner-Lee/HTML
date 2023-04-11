@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/05-CSS-图片-列表-表格.css" />
+		<style>
+			img.img1 {
+				width: 10px;
+				/* float: right; */
+			}
+			#a {
+				vertical-align: baseline;
+			}
+			#b {
+				vertical-align: top;
+			}
+			#c {
+				vertical-align: middle;
+			}
+			/* 笔记 */
+			/* img{
+				<1.>Keyword values
+				vertical-align: baseline;	使元素的基线与父元素的基线对齐。HTML 规范没有详细说明部分可替换元素的基线，如<textarea> ，这意味着这些元素使用此值的表现因浏览器而异。
+
+				vertical-align: sub;		使元素的基线与父元素的下标基线对齐。
+
+				vertical-align: super;		使元素的基线与父元素的上标基线对齐。
+
+				vertical-align: text-top;	使元素的顶部与父元素的字体顶部对齐。
+
+				vertical-align: text-bottom;使元素的底部与父元素的字体底部对齐。
+
+				vertical-align: middle;		使元素的中部与父元素的基线加上父元素 x-height（译注：x 高度）的一半对齐。
+
+				vertical-align: top;		使元素及其后代元素的顶部与整行的顶部对齐。
+
+				vertical-align: bottom;		使元素及其后代元素的底部与整行的底部对齐。
+
+
+
+
+				<2.><length> values			使元素的基线对齐到父元素的基线之上的给定长度。可以是负数。
+				vertical-align: 10em;
+				vertical-align: 4px;
+
+
+
+
+				<3.><percentage> values		使元素的基线对齐到父元素的基线之上的给定百分比，该百分比是line-height属性的百分比。可以是负数。
+				vertical-align: 20%;
+
+
+
+
+				<4.>Global values
+				vertical-align: inherit;
+				vertical-align: initial;
+				vertical-align: unset;
+
+
+
+
+			} */
+
+			span {
+				/* 中划线 */
+				text-decoration: line-through overline underline;
+				/* 上划线 */
+				/* text-decoration: overline; */
+				/* 下划线 */
+				/* text-decoration: underline; */
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+        <img>标签
+
+		必须属性
+        src:资源路径
+        alt:图片加载不出来时的文字说明
+
+		其他属性
+		width="50%"	确定图片宽度
+		title=""	鼠标放入显示文本
+
+        PS:行内块标签
+     -->
+		<h1>img-标签</h1>
+		123
+		<img
+			src="./img/wallhaven-85oy2j.png"
+			alt="wallhaven图片"
+			width="50%"
+			title="废物老师-垃圾-可不可以直接装进核废料桶埋进深海啊！！！！"
+		/>
+		456
+		<hr />
+
+		<h1>img - 用CSS控制</h1>
+		<br /><br /><br />
+		<h2>vertical-align: baseline;</h2>
+		<span>Align of img</span>
+		<img class="img1" id="a" src="./img/star2.png" alt="wallhaven图片" />
+		<hr />
+
+		<h2>vertical-align: top;</h2>
+		<span>Align of img</span>
+		<img class="img1" id="b" src="./img/star2.png" alt="wallhaven图片" />
+		<hr />
+
+		<h2>vertical-align: middle;</h2>
+		<span>Align of img</span>
+		<img class="img1" id="c" src="./img/star2.png" alt="wallhaven图片" />
+		<hr />
+
+
+	</body>
+</html>
